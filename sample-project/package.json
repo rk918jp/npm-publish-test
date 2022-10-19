@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@hoge/sample-module": "^1.0.1"
+    "@hoge/sample-module": "^1.1.0",
+    "axios": "^1.1.3"
   }
 }

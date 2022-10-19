@@ -2,7 +2,9 @@
 
 npmモジュールをpublishするサンプル
 
-## privateレポジトリのセットアップ
+## privateなnpmレジストリのセットアップ
+
+レジストリには[verdaccio](https://github.com/verdaccio/verdaccio)を使用
 
 ```
 #　verdaccioをglobalにインストール
