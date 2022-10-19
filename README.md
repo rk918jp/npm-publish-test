@@ -2,6 +2,11 @@
 
 npmモジュールをpublishするサンプル
 
+## 構成
+
+- sample-module: 配布するモジュール
+- sample-project: 配布されたモジュールを使用するプロジェクト
+
 ## privateなnpmレジストリのセットアップ
 
 レジストリには[verdaccio](https://github.com/verdaccio/verdaccio)を使用
