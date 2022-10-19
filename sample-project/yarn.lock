@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@hoge/sample-module@^1.1.0":
-  version "1.1.0"
-  resolved "http://localhost:4873/@hoge/sample-module/-/sample-module-1.1.0.tgz#60359502a0671677313731380bbef32b4068109b"
-  integrity sha512-yWZwfQdXGtt0RJk/tWpgO59uioZq1rTYGoA7HakhZaUaC+1CKFwvIzSE+fzRdWtimJVTiJORGpkg/MxqawWFyg==
+"@hoge/sample-module@^1.1.6":
+  version "1.1.6"
+  resolved "http://localhost:4873/@hoge/sample-module/-/sample-module-1.1.6.tgz#88c67cb6b0f36d4e666970fba9eb28a51dd065a1"
+  integrity sha512-9fHX/raDkEu2IBxifMmW3QjbulJERFXdY4NbaqfqlLFH1xHmTA9rI8CN0QQLIa+yO4hVIHR1l+TbxGDm/PvbIQ==
   dependencies:
     moment "^2.29.4"
 

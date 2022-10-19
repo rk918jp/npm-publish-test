@@ -8,3 +8,8 @@ export const hoge = (num) => {
 export const formatTime = (date) => {
   return moment(date).format("YYYYMMDD");
 }
+
+export default {
+  hoge,
+  formatTime,
+};

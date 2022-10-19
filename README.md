@@ -38,10 +38,26 @@ npm login --registry=http://localhost:4873/
 
 モジュールのpublish
 ```
+# 先にビルド
+npm run build
+
+# レジストリに登録
 npm publish
 ```
 
 http://localhost:4873/ を開いて登録されているか確認
+
+## モジュールのバンドル
+
+sample-moduleをそのまま配布するとソースコードが見えてしまうので、難読化 & minifyしたファイルのみ登録する。
+
+package.jsonのfilesで登録するファイルを指定出来るので、バンドル後のファイルが配置されるdistを指定。
+
+[rollup](https://rollupjs.org/guide/en/)を使用してモジュールをバンドルする  
+参考: https://zenn.dev/yuki0410/articles/74f80c4243919ea2a247-2
+
+- ソースマップは含めない(sourcemap: false)
+- terserでコメントを全て削除してcompress: trueで圧縮
 
 ## 利用する側の設定
 
@@ -54,4 +70,9 @@ http://localhost:4873/ を開いて登録されているか確認
 パッケージをインストール
 ```
 yarn add @hoge/sample-module
+```
+
+実行
+```
+node index.js
 ```
