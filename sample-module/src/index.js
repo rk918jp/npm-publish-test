@@ -1,4 +1,6 @@
+import React from "react";
 import moment from "moment";
+import {MyButton} from "./Button";
 
 export const hoge = (num) => {
   return num * 2;
@@ -12,4 +14,5 @@ export const formatTime = (date) => {
 export default {
   hoge,
   formatTime,
+  MyButton,
 };

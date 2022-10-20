@@ -3,10 +3,15 @@
     [
       "@babel/preset-env",
       {
-        "targets": {
-          "esmodules": true
-        }
+        "modules": false
       }
-    ]
+    ],
+    "@babel/preset-react"
+  ],
+  "ignore": [
+    "node_modules/**"
+  ],
+  "plugins": [
+    "@babel/plugin-transform-runtime"
   ]
 }
