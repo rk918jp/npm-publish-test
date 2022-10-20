@@ -1,8 +1,7 @@
 import React from "react";
 import logo from './logo.svg';
 import './App.css';
-import components from "@hoge/sample-module";
-const {MyButton} = components;
+import {MyButton} from "@hoge/sample-module/dist/Button/index";
 
 function App() {
   return (

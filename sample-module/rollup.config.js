@@ -2,6 +2,7 @@ import { babel as pluginBabel } from "@rollup/plugin-babel";
 import { terser as pluginTerser } from "rollup-plugin-terser";
 import nodeResolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
+import multiInput from  "rollup-plugin-multi-input";
 
 import * as path from "path";
 
@@ -36,20 +37,25 @@ const plugins = [
 export default [
   // For ES Module
   {
-    input: `src/index.js`,
+    input: [
+      `src/**/*.(js|jsx)`
+    ],
     output: [
       {
-        file: pkg.module,
         format: "es",
         sourcemap: false,
         exports: "named",
+        dir: "dist",
       },
     ],
     external: [
       ...Object.keys(pkg.dependencies || {}),
       ...Object.keys(pkg.devDependencies || {}),
     ],
-    plugins,
+    plugins: [
+      ...plugins,
+      multiInput.default(),
+    ],
   },
   // For CommonJS
   {

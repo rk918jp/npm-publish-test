@@ -1316,10 +1316,10 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
-"@hoge/sample-module@^1.1.9":
-  version "1.1.9"
-  resolved "http://localhost:4873/@hoge/sample-module/-/sample-module-1.1.9.tgz#ee72c2391afe1d93e2913ba4b5009c5a67817da1"
-  integrity sha512-O9uiNVPXEFEY0nZZ2aYIGpIrYW3h8OuNZh9pBRgKGi3dKVyKnJ1DcUGMNMXXVcO+0gaQLXsrjFw1ZlDbbaHkoQ==
+"@hoge/sample-module@^1.2.0":
+  version "1.2.0"
+  resolved "http://localhost:4873/@hoge/sample-module/-/sample-module-1.2.0.tgz#13948146c18c300ed746b7ef6919fc24f91384b5"
+  integrity sha512-BKu59SXbhPDLqzSojn2HoCd4RNuBGJIH5oajqVQuBKVQUaDW4qoI/e/qfARFr++cCaqEGEbYJz4TQHhwFp5wTA==
   dependencies:
     "@babel/plugin-transform-runtime" "^7.19.1"
     "@emotion/react" "^11.10.4"
