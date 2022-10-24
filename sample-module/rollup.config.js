@@ -35,14 +35,14 @@ const plugins = [
 ];
 
 export default [
-  // For ES Module
+  // For CommonJS
   {
     input: [
       `src/**/*.(js|jsx)`
     ],
     output: [
       {
-        format: "es",
+        format: "cjs",
         sourcemap: false,
         exports: "named",
         dir: "dist",
@@ -56,22 +56,5 @@ export default [
       ...plugins,
       multiInput.default(),
     ],
-  },
-  // For CommonJS
-  {
-    input: "src/index.js",
-    output: [
-      {
-        file: pkg.main,
-        format: "cjs",
-        sourcemap: false,
-        exports: "named",
-      },
-    ],
-    external: [
-      ...Object.keys(pkg.dependencies || {}),
-      ...Object.keys(pkg.devDependencies || {}),
-    ],
-    plugins,
   },
 ];

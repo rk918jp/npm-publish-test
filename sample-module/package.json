@@ -1,6 +1,6 @@
 {
   "name": "@hoge/sample-module",
-  "version": "1.2.0",
+  "version": "1.2.4",
   "license": "MIT",
   "scripts": {
     "build": "rollup -c --bundleConfigAsCjs"
