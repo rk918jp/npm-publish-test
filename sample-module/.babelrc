@@ -6,12 +6,16 @@
         "modules": false
       }
     ],
-    "@babel/preset-react"
+    [
+      "@babel/preset-react",
+      { "runtime": "automatic", "importSource": "@emotion/react" }
+    ]
   ],
   "ignore": [
     "node_modules/**"
   ],
   "plugins": [
+    "@emotion/babel-plugin",
     "@babel/plugin-transform-runtime"
   ]
 }
