@@ -2,8 +2,10 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { MyButton } from "@hoge/sample-module/dist/Button";
+import { useMDX } from "@hoge/sample-module/dist/hooks/useMDX";
 
 export default function Home() {
+  const Content = useMDX("## Heading")
   return (
     <div className={styles.container}>
       <Head>
@@ -18,6 +20,8 @@ export default function Home() {
         </h1>
 
         <MyButton>TEST</MyButton>
+        <Content />
+
       </main>
 
       <footer className={styles.footer}>

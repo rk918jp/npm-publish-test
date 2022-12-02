@@ -42,7 +42,7 @@ export default [
     ],
     output: [
       {
-        format: "cjs",
+        format: "es",
         sourcemap: false,
         exports: "named",
         dir: "dist",

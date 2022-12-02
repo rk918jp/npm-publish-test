@@ -12,8 +12,9 @@
     "@emotion/core": "^11.0.0",
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
-    "@hoge/sample-module": "^1.2.7",
+    "@hoge/sample-module": "^1.2.9",
     "next": "12.3.1",
+    "next-transpile-modules": "^10.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
